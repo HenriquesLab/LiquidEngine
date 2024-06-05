@@ -1,14 +1,14 @@
 # Liquid Engine
 
-[![PyPI](https://img.shields.io/pypi/v/nanopyx.svg?color=green)](https://pypi.org/project/liquid_engine)
-[![Python Version](https://img.shields.io/pypi/pyversions/nanopyx.svg?color=green)](https://python.org)
-[![Downloads](https://img.shields.io/pypi/dm/nanopyx)](https://pypi.org/project/LiquidEngine)
+[![PyPI](https://img.shields.io/pypi/v/liquid_engine.svg?color=green)](https://pypi.org/project/liquid_engine)
+[![Python Version](https://img.shields.io/pypi/pyversions/liquid_engine.svg?color=green)](https://python.org)
+[![Downloads](https://img.shields.io/pypi/dm/liquid_engine)](https://pypi.org/project/LiquidEngine)
 [![Docs](https://img.shields.io/badge/documentation-link-blueviolet)](https://henriqueslab.github.io/LiquidEngine)
-[![License](https://img.shields.io/github/license/HenriquesLab/NanoPyx?color=Green)](https://github.com/HenriquesLab/LiquidEngine/blob/main/LICENSE.txt)
-[![Tests](https://github.com/HenriquesLab/NanoPyx/actions/workflows/nanopyx_oncall_mechanic.yml/badge.svg)](https://github.com/HenriquesLab/LiquidEngine/actions/workflows/nightly.yml)
-[![Contributors](https://img.shields.io/github/contributors-anon/HenriquesLab/NanoPyx)](https://github.com/HenriquesLab/LiquidEngine/graphs/contributors)
-[![GitHub stars](https://img.shields.io/github/stars/HenriquesLab/NanoPyx?style=social)](https://github.com/HenriquesLab/LiquidEngine/)
-[![GitHub forks](https://img.shields.io/github/forks/HenriquesLab/NanoPyx?style=social)](https://github.com/HenriquesLab/LiquidEngine/)
+[![License](https://img.shields.io/github/license/HenriquesLab/LiquidEngine?color=Green)](https://github.com/HenriquesLab/LiquidEngine/blob/main/LICENSE.txt)
+[![Tests](https://github.com/HenriquesLab/LiquidEngine/actions/workflows/nightly.yml/badge.svg)](https://github.com/HenriquesLab/LiquidEngine/actions/workflows/nightly.yml)
+[![Contributors](https://img.shields.io/github/contributors-anon/HenriquesLab/LiquidEngine)](https://github.com/HenriquesLab/LiquidEngine/graphs/contributors)
+[![GitHub stars](https://img.shields.io/github/stars/HenriquesLab/LiquidEngine?style=social)](https://github.com/HenriquesLab/LiquidEngine/)
+[![GitHub forks](https://img.shields.io/github/forks/HenriquesLab/LiquidEngine?style=social)](https://github.com/HenriquesLab/LiquidEngine/)
 [![DOI](https://zenodo.org/badge/505388398.svg)](https://zenodo.org/badge/latestdoi/505388398)
 
 Liquid Engine - Accelerating Bioimage Analysis with dynamic selection of algorithm variations
