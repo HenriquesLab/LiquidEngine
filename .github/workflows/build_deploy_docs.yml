@@ -32,6 +32,7 @@ jobs:
       - name: Install requirements
         run: |
           python -m pip install pdoc
+          python -m pip install -e .
       - name: Generate Docs
         run: |
           python -m pdoc src/liquid_engine -o docs/
