@@ -2,7 +2,7 @@
 
 [![PyPI](https://img.shields.io/pypi/v/liquid_engine.svg?color=green)](https://pypi.org/project/liquid_engine)
 [![Python Version](https://img.shields.io/pypi/pyversions/liquid_engine.svg?color=green)](https://python.org)
-[![Downloads](https://img.shields.io/pypi/dm/liquid_engine)](https://pypi.org/project/LiquidEngine)
+[![Downloads](https://img.shields.io/pypi/dm/liquid_engine)](https://pypi.org/project/liquid_engine)
 [![Docs](https://img.shields.io/badge/documentation-link-blueviolet)](https://henriqueslab.github.io/LiquidEngine)
 [![License](https://img.shields.io/github/license/HenriquesLab/LiquidEngine?color=Green)](https://github.com/HenriquesLab/LiquidEngine/blob/main/LICENSE.txt)
 [![Tests](https://github.com/HenriquesLab/LiquidEngine/actions/workflows/nightly.yml/badge.svg)](https://github.com/HenriquesLab/LiquidEngine/actions/workflows/nightly.yml)
@@ -15,7 +15,7 @@ Liquid Engine - Accelerating Bioimage Analysis with dynamic selection of algorit
 
 ---
 
-Liquid Engine
+## Liquid Engine
 
 The Liquid Engine is a high-performance, adaptive framework designed to optimize computational workflows for bioimage analysis. It dynamically generates optimized CPU and GPU-based code variations and selects the fastest combination based on input parameters and device performance, significantly enhancing computational speed. The Liquid Engine employs a machine learning-based Agent to predict the optimal combination of implementations, adaptively responding to delays and performance variations.
 
