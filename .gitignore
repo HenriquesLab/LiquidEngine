@@ -5,3 +5,4 @@ src/liquid_engine.egg-info/PKG-INFO
 src/liquid_engine.egg-info/requires.txt
 src/liquid_engine.egg-info/SOURCES.txt
 src/liquid_engine.egg-info/top_level.txt
+dist/*
