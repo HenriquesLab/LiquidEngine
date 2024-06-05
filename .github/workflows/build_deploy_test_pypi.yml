@@ -1,4 +1,4 @@
-name: Build and Deploy Test PyPI
+name: (cloud) Build and Deploy Test PyPI
 
 on:
     # creates a button

@@ -1,4 +1,4 @@
-name: Test - Nightly
+name: (self-hosted) Test - Nightly
 
 on:
   schedule:

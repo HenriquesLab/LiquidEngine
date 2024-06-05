@@ -1,4 +1,4 @@
-name: Build and Deploy PyPI
+name: (cloud) Build and Deploy PyPI
 
 on:
     # creates a button
