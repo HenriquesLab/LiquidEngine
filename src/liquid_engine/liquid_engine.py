@@ -438,11 +438,6 @@ class LiquidEngine:
 
         return size
 
-    #####################################################
-    #                   RUN METHODS                     #
-    # THESE SHOULD ALWAYS BE OVERRIDEN BY CHILD CLASSES #
-    #####################################################
-
     def run(self, *args, **kwargs):
         """
         Runs the function with the given args and kwargs

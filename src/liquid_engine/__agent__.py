@@ -22,7 +22,6 @@ class Agent_:
         """
         Initialize the Agent
         The agent is supposed to work as a singleton object, initialized only once in the __init__.py of nanopyx
-        PS: (Is this good enough or is it necessary to implement the singleton design pattern?)
 
         Agent responsabilities:
             1. Store the current state of the machine (e.g. OS, CPU, RAM, GPU, Python version etc.);
