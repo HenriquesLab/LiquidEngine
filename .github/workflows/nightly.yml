@@ -32,6 +32,7 @@ jobs:
         run: |
           python -m pip install --upgrade pytest
           python -m pip install -e .
+          python -m pip install pyopencl
           python -m pytest
         env:
           LOG_LEVEL: ${{ github.event.inputs.logLevel }}
