@@ -3,6 +3,36 @@ import warnings
 
 os.environ["PYOPENCL_COMPILER_OUTPUT"] = "1"
 
+
+class NoCL(object):
+    class MemoryError(Exception):
+        def __init__(self):
+            self.message = "NoCL memory error"
+
+        def __str__(self):
+            print(self.message)
+
+    class LogicError(Exception):
+        def __init__(self):
+            self.message = "NoCL logic error"
+
+        def __str__(self):
+            print(self.message)
+
+    class Error(Exception):
+        def __init__(self):
+            self.message = "NoCL error"
+
+        def __str__(self):
+            print(self.message)
+
+    def __init__(self):
+        pass
+
+    def __bool__(self):
+        return False
+
+
 try:
     import pyopencl as cl
     import pyopencl.array as cl_array
@@ -38,7 +68,7 @@ try:
 
 except (ImportError, OSError, Exception) as e:
     print("This exception is what's causing cl equals None:", e)
-    cl = None
+    cl = NoCL()
     cl_array = None
     devices = None
     _fastest_device = None
@@ -88,7 +118,7 @@ def opencl_works():
         return False
 
     elif enabled:
-        if cl is None:
+        if not cl:
             warnings.warn("tap... tap... tap... COMPUTER SAYS NO (OpenCL)!")
             os.environ["NANOPYX_DISABLE_OPENCL"] = "1"
             return False
