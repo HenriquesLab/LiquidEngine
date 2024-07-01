@@ -27,7 +27,10 @@ class NoCL(object):
             print(self.message)
 
     def __init__(self):
-        self.works = False
+        pass
+
+    def __bool__(self):
+        return False
 
 
 try:
@@ -115,7 +118,7 @@ def opencl_works():
         return False
 
     elif enabled:
-        if not cl.works:
+        if not cl:
             warnings.warn("tap... tap... tap... COMPUTER SAYS NO (OpenCL)!")
             os.environ["NANOPYX_DISABLE_OPENCL"] = "1"
             return False
