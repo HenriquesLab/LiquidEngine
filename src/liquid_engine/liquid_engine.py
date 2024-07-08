@@ -64,6 +64,7 @@ class LiquidEngine:
                 (...)
         """
 
+        self._benchmarking = False
         # Start by checking available run types
         self._run_types = {}
         for rt in inspect.getmembers(self, inspect.ismethod):
@@ -212,8 +213,12 @@ class LiquidEngine:
         except Exception as e:
             print(f"Unexpected error while trying to run {run_type}")
             print(e)
-            print("Please try again with another run type")
-            result = None
+            if self._benchmarking:
+                result = None
+            else:
+                print("Trying again with another run type")
+                self._run_types.pop(run_type)
+                result = self._run(*args, run_type=None, **kwargs)
 
         self.mem_div = 1
         return result
@@ -229,6 +234,8 @@ class LiquidEngine:
         :return:  a list of tuples containing the run time, run type name and optionally the return values
         :rtype: [[run_time, run_type_name, return_value], ...]
         """
+
+        self._benchmarking = True
 
         # Create some lists to store runtimes and return values of run types
         run_times = {}
@@ -278,6 +285,8 @@ class LiquidEngine:
                 warnings.warn(f"WARNING: disabling {list(common_runtype)[0]} for this set of arguments!")
                 arg_repr, arg_score = self._get_args_repr_score(*args, **kwargs)
                 self._store_results(arg_repr, arg_score, list(common_runtype)[0], None)  # None saves to null in yamls
+
+        self._benchmarking = False
 
         return speed_sort
 
