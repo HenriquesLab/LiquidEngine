@@ -307,8 +307,9 @@ class LiquidEngine:
 
         assert os.path.exists(cl_file), "Could not find OpenCL file: " + str(cl_file)
 
-        kernel_str = open(cl_file).read()
-
+        with open(cl_file) as f:
+            kernel_str = f.read()
+            
         if not cl_dp:
             kernel_str = kernel_str.replace("double", "float")
 
