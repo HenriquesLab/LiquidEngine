@@ -369,9 +369,8 @@ class LiquidEngine:
         for arg in args:
             if type(arg) in (float, int):
                 _args.append(f"number({arg})")
-                if arg == 0:
-                    arg = 1
-                _norm *= arg
+                if arg != 0:
+                    _norm *= arg
             elif hasattr(arg, "shape"):
                 _args.append(f"shape{arg.shape}")
                 _norm *= arg.size
