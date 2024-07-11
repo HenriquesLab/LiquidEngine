@@ -382,9 +382,8 @@ class LiquidEngine:
         for k, v in kwargs.items():
             if type(v) in (float, int):
                 _kwargs[k] = f"number({v})"
-                if v == 0:
-                    v = 1
-                _norm *= v
+                if v != 0:
+                    _norm *= v
             if hasattr(v, "shape"):
                 _kwargs[k] = f"shape{arg.shape}"
                 _norm *= v.size

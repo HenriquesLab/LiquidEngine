@@ -52,7 +52,7 @@ class Agent_:
 
         self.delayed_runtypes = {}  # Store runtypes as keys and their values as (delay_factor, delay_prob)
 
-    def _get_ordered_run_types(self, fn, args, kwargs,_possible_runtypes=[]):
+    def _get_ordered_run_types(self, fn, args, kwargs, _possible_runtypes=[]):
         """@public
         Retrieves an ordered list of run_types for the given args and kwargs
         """
