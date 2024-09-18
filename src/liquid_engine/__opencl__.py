@@ -58,8 +58,11 @@ try:
                     cl_dp = False
                 else:
                     cl_dp = False
-
-                perf = dev.max_compute_units * dev.max_clock_frequency
+                if "Intel" in platform.vendor:
+                    # penalty for Intel based integrated GPUs as compute units here refer to threads
+                    perf = dev.max_compute_units/2 * dev.max_clock_frequency * dev.max_mem_alloc_size
+                else:
+                    perf = dev.max_compute_units * dev.max_clock_frequency * dev.max_mem_alloc_size
                 if perf > max_perf:
                     max_perf = perf
                     _fastest_device = {"device": dev, "DP": cl_dp}
